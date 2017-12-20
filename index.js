@@ -17,15 +17,18 @@ function destructivelyRemoveFirstKitten(name){
   return kittens
 }
 function appendKitten(name){
-  [...kittens, 'Broom']
+  kittens = [...kittens, 'Broom']
   return kittens
 }
 function prependKitten(name){
+  kittens = ['Broom', ...kittens]
   return kittens
 }
 function removeLastKitten(){
+  kittens.pop()
   return kittens
 }
 function removeFirstKitten(){
+  kittens.unshift()
   return kittens
 }

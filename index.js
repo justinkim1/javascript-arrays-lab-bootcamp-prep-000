@@ -25,7 +25,7 @@ function prependKitten(){
   return prependKitten
 }
 function removeLastKitten(){
-  removeLastKitten = kittens.push('Garfield')
+  removeLastKitten = kittens.unshift('Garfield')
   return removeLastKitten
 }
 function removeFirstKitten(){
